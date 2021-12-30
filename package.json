@@ -1,89 +1,85 @@
 {
-    "name": "scapr",
-    "description": "Scaffold new projects with ease!",
-    "version": "0.0.0",
-    "author": "newtykins",
-    "bin": {
-        "scapr": "./bin/run"
-    },
-    "bugs": "https://github.com/scapr/scapr/issues",
-    "dependencies": {
-        "@oclif/core": "^1",
-        "@oclif/plugin-help": "^5",
-        "chalk": "4.1.2",
-        "command-exists": "^1.2.9",
-        "conf": "^10.1.1",
-        "execa": "5.1.1",
-        "figures": "3.2.0",
-        "yaml": "^1.10.2"
-    },
-    "devDependencies": {
-        "@commitlint/cli": "^16.0.1",
-        "@commitlint/config-conventional": "^16.0.0",
-        "@types/command-exists": "^1.2.0",
-        "@types/node": "^16.9.4",
-        "commitizen": "^4.2.4",
-        "cz-conventional-changelog": "^3.3.0",
-        "eslint": "^7.32.0",
-        "eslint-config-oclif": "^4",
-        "eslint-config-oclif-typescript": "^1.0.2",
-        "globby": "^11",
-        "husky": "^7.0.4",
-        "nodemon": "^2.0.15",
-        "oclif": "^2.0.0-main.10",
-        "prettier": "^2.5.1",
-        "pretty-quick": "^3.1.3",
-        "shx": "^0.3.3",
-        "ts-node": "^10.2.1",
-        "tslib": "^2.3.1",
-        "typescript": "^4.4.3"
-    },
-    "dirname": "oex",
-    "engines": {
-        "node": ">=12.0.0"
-    },
-    "files": [
-        "/bin",
-        "/dist",
-        "/npm-shrinkwrap.json",
-        "/oclif.manifest.json"
-    ],
-    "homepage": "https://github.com/scapr/scapr",
-    "keywords": [
-        "oclif"
-    ],
-    "license": "MIT",
-    "main": "dist/index.js",
-    "oclif": {
-        "bin": "scapr",
-        "commands": "./dist/commands",
-        "plugins": [
-            "@oclif/plugin-help"
-        ],
-        "topicSeparator": " ",
-        "topics": {
-            "hello": {
-                "description": "Say hello to the world and others"
-            }
-        }
-    },
-    "repository": "scapr/scapr",
-    "scripts": {
-        "build": "shx rm -rf dist && tsc -b",
-        "lint": "eslint . --ext .ts --config .eslintrc",
-        "prettier": "prettier src --write",
-        "postpack": "shx rm -f oclif.manifest.json",
-        "posttest": "yarn lint",
-        "prepack": "yarn build && oclif manifest && oclif readme",
-        "version": "oclif readme && git add README.md",
-        "prepare": "husky install",
-        "commit": "cz",
-        "watch": "nodemon"
-    },
-    "types": "dist/index.d.ts",
-    "config": {
-        "commitizen": {
-            "path": "cz-conventional-changelog"
-        }
-    }
+	"name": "scapr",
+	"description": "Scaffold new projects with ease!",
+	"version": "0.0.0",
+	"author": "newtykins",
+	"bin": {
+		"scapr": "./bin/run"
+	},
+	"bugs": "https://github.com/scapr/scapr/issues",
+	"dependencies": {
+		"@oclif/core": "^1",
+		"@oclif/plugin-help": "^5",
+		"chalk": "4.1.2",
+		"command-exists": "^1.2.9",
+		"conf": "^10.1.1",
+		"execa": "5.1.1",
+		"figures": "3.2.0",
+		"yaml": "^1.10.2"
+	},
+	"devDependencies": {
+		"@commitlint/cli": "^16.0.1",
+		"@commitlint/config-conventional": "^16.0.0",
+		"@types/command-exists": "^1.2.0",
+		"@types/node": "^16.9.4",
+		"commitizen": "^4.2.4",
+		"cz-conventional-changelog": "^3.3.0",
+		"globby": "^11",
+		"husky": "^7.0.4",
+		"nodemon": "^2.0.15",
+		"oclif": "^2.0.0-main.10",
+		"prettier": "^2.5.1",
+		"pretty-quick": "^3.1.3",
+		"shx": "^0.3.3",
+		"ts-node": "^10.2.1",
+		"tslib": "^2.3.1",
+		"typescript": "^4.4.3"
+	},
+	"dirname": "oex",
+	"engines": {
+		"node": ">=12.0.0"
+	},
+	"files": [
+		"/bin",
+		"/dist",
+		"/npm-shrinkwrap.json",
+		"/oclif.manifest.json"
+	],
+	"homepage": "https://github.com/scapr/scapr",
+	"keywords": [
+		"oclif"
+	],
+	"license": "MIT",
+	"main": "dist/index.js",
+	"oclif": {
+		"bin": "scapr",
+		"commands": "./dist/commands",
+		"plugins": [
+			"@oclif/plugin-help"
+		],
+		"topicSeparator": " ",
+		"topics": {
+			"hello": {
+				"description": "Say hello to the world and others"
+			}
+		}
+	},
+	"repository": "scapr/scapr",
+	"scripts": {
+		"build": "shx rm -rf dist && tsc -b",
+		"prettier": "prettier src --write",
+		"postpack": "shx rm -f oclif.manifest.json",
+		"posttest": "yarn lint",
+		"prepack": "yarn build && oclif manifest && oclif readme",
+		"version": "oclif readme && git add README.md",
+		"prepare": "husky install",
+		"commit": "cz",
+		"watch": "nodemon"
+	},
+	"types": "dist/index.d.ts",
+	"config": {
+		"commitizen": {
+			"path": "cz-conventional-changelog"
+		}
+	}
 }

@@ -1,15 +1,14 @@
 {
-    "files.exclude": {
-        "**/.git": true,
-        "**/.svn": true,
-        "**/.hg": true,
-        "**/CVS": true,
-        "**/.DS_Store": true,
-        "**/Thumbs.db": true,
-        "**/.editorconfig": true,
-        "**/license.md": true,
-        "**/nodemon.json": true,
-        "**/commitlint.config.js": true,
-        "**/.eslintignore": true
-    }
+	"files.exclude": {
+		"**/.git": true,
+		"**/.svn": true,
+		"**/.hg": true,
+		"**/CVS": true,
+		"**/.DS_Store": true,
+		"**/Thumbs.db": true,
+		"**/.editorconfig": true,
+		"**/license.md": true,
+		"**/nodemon.json": true,
+		"**/commitlint.config.js": true
+	}
 }
