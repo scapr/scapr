@@ -1,6 +1,15 @@
 {
-  "extends": [
-    "oclif",
-    "oclif-typescript"
-  ]
+    "extends": ["oclif", "oclif-typescript"],
+    "rules": {
+        "unicorn/filename-case": "off",
+        "semi": "off",
+        "indent": ["error", 4],
+        "@typescript-eslint/explicit-module-boundary-types": "off",
+        "comma-dangle": "off",
+        "no-warning-comments": "off",
+        "object-curly-spacing": "off",
+        "unicorn/prefer-node-protocol": "off",
+        "@typescript-eslint/no-empty-interface": "warn",
+        "unicorn/empty-brace-spaces": "off"
+    }
 }

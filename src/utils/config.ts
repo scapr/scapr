@@ -4,15 +4,10 @@ import { Config } from '../types';
 /**
  * Conf schema
  */
-export const schema: Schema<Config> = {
-	firstRun: {
-		type: 'boolean',
-		default: true
-	}
-}
+export const schema: Schema<Config> = {};
 
 /**
  * Conf instance used to power the CLI
  */
-export const config = new Conf();
+export const config = new Conf<Config>({ schema });
 export default config;

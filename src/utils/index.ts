@@ -1,5 +1,5 @@
 import { config } from './config';
-import path from 'path';
+import path from 'node:path';
 
 /**
  * The folder in which all of the hubs are contained
