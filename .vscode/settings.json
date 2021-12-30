@@ -7,6 +7,9 @@
         "**/.DS_Store": true,
         "**/Thumbs.db": true,
         "**/.editorconfig": true,
-        "**/license.md": true
+        "**/license.md": true,
+        "**/nodemon.json": true,
+        "**/commitlint.config.js": true,
+        "**/.eslintignore": true
     }
 }
