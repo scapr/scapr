@@ -12,7 +12,7 @@
 		"@oclif/plugin-help": "^5",
 		"chalk": "4.1.2",
 		"command-exists": "^1.2.9",
-		"conf": "^10.1.1",
+		"conf": "^10.1.2",
 		"execa": "5.1.1",
 		"figures": "3.2.0",
 		"yaml": "^1.10.2"
